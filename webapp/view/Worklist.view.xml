@@ -1,0 +1,23 @@
+<mvc:View
+  controllerName="com.sap.dashboard.controller.Worklist"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:semantic="sap.m.semantic"
+  xmlns:viz="sap.viz.ui5.controls"
+  xmlns:l="sap.ui.layout">
+
+  <semantic:FullscreenPage
+    id="page"
+    navButtonPress="onNavBack"
+    showNavButton="false"
+    title="{i18n>worklistViewTitle}">
+    <semantic:content>
+	
+	<viz:VizFrame  xmlns="sap.viz" id="idStackedChart"  vizType="stacked_bar" width="100%" height="100%">
+    </viz:VizFrame>
+  
+    </semantic:content>
+
+  </semantic:FullscreenPage>
+
+</mvc:View>
